@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+
+.bookshelves {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shelf {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Warna latar tabel */
+#unfinished-books {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#finished-books {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+
+.add-book-form {
+    margin: 0 auto; 
+    max-width: 400px; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-book-form input,
+.add-book-form button {
+    margin-bottom: 10px;
+    width: calc(100% - 10px);
+}
+
+.add-book-form label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-book-form input[type="checkbox"] {
+    margin: 0px 0px 10px 0px;
+}
+
+/* Footer */
+footer {
+    background-color: #f6f6f6; 
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+#clear-data-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf App</h1>
+    </header>
+
+    <main>
+        <section class="bookshelves">
+            <table id="unfinished-books" class="shelf" border="1">
+                <caption>Belum selesai dibaca</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <table id="finished-books" class="shelf" border="1">
+                <caption>Selesai dibaca</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <button id="clear-data-button">Hapus Semua Data</button>
+
+        <section class="add-book-form">
+            <h2>Tambah Buku Baru</h2>
+            <form id="book-form">
+                <label for="title">Judul:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Penulis:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="year">Tahun:</label>
+                <input type="number" id="year" name="year" required>
+                <label for="isComplete">Selesai dibaca?</label>
+                <input type="checkbox" id="isComplete" name="isComplete">
+                <button type="submit" id="addBookButton">Tambah Buku</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sultan Nabil f1946yb117 &copy; 2024 Bookshelf App</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
